@@ -1,0 +1,171 @@
+
+body{
+    margin:20px;
+    background:#333
+    
+}
+
+.main{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    width:100%;
+    height: 100vh;
+    background:#333
+ 
+}
+
+
+.maincontainer{
+    position: relative;
+    width:100%;
+
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+
+}
+.main:hover .card{
+    transform:rotateY(180deg);   
+}
+
+.main:hover .card-1{
+    transform:rotateX(180deg)
+}
+.main:hover .card-5{
+    transform:rotateX(180deg)
+}
+.main:hover .card-7{
+    transform:rotateX(180deg)
+}
+.main:hover .card-11{
+    transform:rotateX(180deg)
+}
+.card-2{
+    transition-delay: .2s;
+}
+.card-3{
+    transition-delay: .3s;
+}
+.card-4{
+    transition-delay: .4s;
+     
+}
+.card-5{
+    transition-delay: .5s;
+}
+.card-6{
+    transition-delay: .6s;
+}
+.card-7{
+    transition-delay: .7s;
+}
+.card-8{
+    transition-delay: .8s;
+}
+.card-9{
+    transition-delay: .9s;
+}
+.card-10{
+    transition-delay: 1.0s;
+}
+.card-11{
+    transition-delay: 1.2s;
+}
+.card-12{
+    transition-delay: 1.3s;
+}
+
+
+
+.main>div:nth-of-type(1){
+    grid-column:1/4
+}
+.main>div:nth-of-type(5){
+    grid-column:2/5
+}
+.main>div:nth-of-type(7){
+    grid-column:1/4
+}
+.main>div:nth-of-type(11){
+    grid-column:2/5
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color:white;
+    border-radius: 5px;
+   
+}
+.img1{
+    background: url(http://source.unsplash.com/random?autumn);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.img2{
+    background: url(http://source.unsplash.com/random?spring);
+    background-attachment:fixed;
+    background-size:cover;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    
+}
+   
+.back1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+
+}   
+.back5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+
+} 
+.back7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+
+}     
+.back11{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+
+}       
+    
